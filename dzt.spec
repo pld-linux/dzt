@@ -30,7 +30,7 @@ udziwnieñ oraz stablinego JJGTZ.
 
 %build
 rm -f missing
-gettextize --copy --force
+%{__gettextize}
 %{__libtoolize}
 aclocal -I %{_aclocaldir}/gnome
 autoconf
