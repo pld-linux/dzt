@@ -30,8 +30,8 @@ dzt jest JJGTZ (Jeszcze Jeden GNOME Terminal z Zak³adkami). Jest to
 wielozak³adkowy terminal, który jest prosty, konfigurowalny i szybki w
 u¿yciu.
 
-Zainstaluj dzt je¶li potrzebujsz prostego, szybkiego, pozbawionego
-udziwnieñ oraz stablinego JJGTZ.
+Zainstaluj dzt je¶li potrzebujesz prostego, szybkiego, pozbawionego
+udziwnieñ oraz stabilnego JJGTZ.
 
 %prep
 %setup -q
