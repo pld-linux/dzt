@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://telia.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
+# Source0-md5:	3472795fc9914924a56c155048581fdd
 Patch0:		%{name}-config.patch
 URL:		http://dzt.sourceforge.net/
 BuildRequires:	autoconf
