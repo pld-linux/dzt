@@ -31,7 +31,7 @@ udziwnieñ oraz stablinego JJGTZ.
 %build
 rm -f missing
 gettextize --copy --force
-libtoolize --copy --force
+%{__libtoolize}
 aclocal -I %{_aclocaldir}/gnome
 autoconf
 rm -f macros/Makefile.am
