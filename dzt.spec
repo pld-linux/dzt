@@ -2,8 +2,8 @@ Summary:	Yet Another Tabbed GNOME Terminal
 Summary:	Jeszcze jeden GNOME Terminal z zak³adkami
 Name:		dzt
 Version:	1.0.4
-Release:	1
-License:	GPL v2
+Release:	2
+License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://telia.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
 URL:		http://dzt.sourceforge.net/
@@ -22,7 +22,7 @@ dzt is a YATGT (Yet Another Tabbed GNOME Terminal). It is a
 multi-tabbed/paged terminal which is simple, configurable, and quick
 to use.
 
-Install dzt if you want a simple, quick, clean, and stable YATGT
+Install dzt if you want a simple, quick, clean, and stable YATGT.
 
 %description -l pl
 dzt jest JJGTZ (Jeszcze Jeden GNOME Terminal z Zak³adkami). Jest to
