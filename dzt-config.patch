@@ -1,0 +1,17 @@
+diff -urN dzt-1.1.1.orig/configure.in dzt-1.1.1/configure.in
+--- dzt-1.1.1.orig/configure.in	Sat May 10 23:02:38 2003
++++ dzt-1.1.1/configure.in	Sat May 10 23:28:13 2003
+@@ -30,12 +30,9 @@
+   AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${prefix}/${DATADIRNAME}/locale")
+ fi
+ 
+-AC_OUTPUT([ intl/Makefile po/Makefile.in m4/Makefile  intl/Makefile po/Makefile.in m4/Makefile  intl/Makefile po/Makefile.in m4/Makefile  intl/Makefile po/Makefile.in m4/Makefile 
+-Makefile
++AC_OUTPUT([ po/Makefile.in m4/Makefile  intl/Makefile Makefile
+ macros/Makefile
+ src/Makefile
+-intl/Makefile
+-po/Makefile.in
+ dzt.spec
+ docs/Makefile
+ docs/C/Makefile
