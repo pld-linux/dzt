@@ -1,0 +1,8 @@
+diff -urN dzt-1.1.1.orig/dzt.desktop dzt-1.1.1/dzt.desktop
+--- dzt-1.1.1.orig/dzt.desktop	2002-03-20 07:47:15.000000000 +0100
++++ dzt-1.1.1/dzt.desktop	2004-07-04 03:03:35.426940400 +0200
+@@ -5,3 +5,4 @@
+ Icon=dzt.png
+ Terminal=0
+ Type=Application
++Categories=GTK;GNOME;TerminalEmulator;
