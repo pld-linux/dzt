@@ -3,12 +3,19 @@ Summary:	Jeszcze jeden GNOME Terminal z zak³adkami
 Name:		dzt
 Version:	1.0.2
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications
-URL:		http://dzt.sourceforge.net/
 Source0:	http://telia.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.bz2
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+URL:		http://dzt.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
+BuildRequires:	libtool
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
 
 %description
 dzt is a YATGT (Yet Another Tabbed GNOME Terminal). It is a
@@ -19,8 +26,8 @@ Install dzt if you want a simple, quick, clean, and stable YATGT
 
 %description -l pl
 dzt jest JJGTZ (Jeszcze Jeden GNOME Terminal z Zak³adkami). Jest to
-wielozak³adkowy terminal, który jest prosty, konfigurowalny i szybki
-w u¿yciu.
+wielozak³adkowy terminal, który jest prosty, konfigurowalny i szybki w
+u¿yciu.
 
 Zainstaluj dzt je¶li potrzebujsz prostego, szybkiego, pozbawionego
 udziwnieñ oraz stablinego JJGTZ.
@@ -32,28 +39,27 @@ udziwnieñ oraz stablinego JJGTZ.
 rm -f missing
 %{__gettextize}
 %{__libtoolize}
-aclocal -I %{_aclocaldir}/gnome
-autoconf
+%{__aclocal} -I %{_aclocaldir}/gnome
+%{__autoconf}
 rm -f macros/Makefile.am
-automake -a -c
+%{__automake}
 %configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	Applicationsdir=%{_applnkdir}/Terminals
 
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Terminals
-install dzt.desktop $RPM_BUILD_ROOT%{_applnkdir}/Terminals
-
+%find_lang %{name} --with-gnome
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
 %doc README AUTHORS ChangeLog
-%{_datadir}/gnome/help/dzt/*
+%attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Terminals/*
