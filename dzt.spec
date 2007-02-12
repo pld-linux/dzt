@@ -1,5 +1,5 @@
 Summary:	Yet Another Tabbed GNOME Terminal
-Summary(pl):	Jeszcze jeden GNOME Terminal z zak≥adkami
+Summary(pl.UTF-8):   Jeszcze jeden GNOME Terminal z zak≈Çadkami
 Name:		dzt
 Version:	1.1.1
 Release:	3
@@ -25,13 +25,13 @@ to use.
 
 Install dzt if you want a simple, quick, clean, and stable YATGT.
 
-%description -l pl
-dzt jest JJGTZ (Jeszcze Jeden GNOME Terminal z Zak≥adkami). Jest to
-wielozak≥adkowy terminal, ktÛry jest prosty, konfigurowalny i szybki w
-uøyciu.
+%description -l pl.UTF-8
+dzt jest JJGTZ (Jeszcze Jeden GNOME Terminal z Zak≈Çadkami). Jest to
+wielozak≈Çadkowy terminal, kt√≥ry jest prosty, konfigurowalny i szybki w
+u≈ºyciu.
 
-Zainstaluj dzt je∂li potrzebujesz prostego, szybkiego, pozbawionego
-udziwnieÒ oraz stabilnego JJGTZ.
+Zainstaluj dzt je≈õli potrzebujesz prostego, szybkiego, pozbawionego
+udziwnie≈Ñ oraz stabilnego JJGTZ.
 
 %prep
 %setup -q
