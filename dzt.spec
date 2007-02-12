@@ -1,5 +1,5 @@
 Summary:	Yet Another Tabbed GNOME Terminal
-Summary(pl.UTF-8):   Jeszcze jeden GNOME Terminal z zakładkami
+Summary(pl.UTF-8):	Jeszcze jeden GNOME Terminal z zakładkami
 Name:		dzt
 Version:	1.1.1
 Release:	3
